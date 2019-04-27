@@ -62,5 +62,65 @@ body { width: 100%;}
 * * Attribute Selectors
 ******************************************************/
 
+body {
+	font-family: Beirut, "serif";
+}
 
+header {
+	color: greenyellow;
+	background-color: #373a37;
+	font-size: 1.35rem;
+}
 
+h1 {
+	text-decoration-color: greenyellow;
+	display: inline-block;
+	margin-right: 2rem;
+
+}
+
+img {
+	display: block;
+	margin: 0 auto 2rem;
+	width: 300px;
+	align-content: center;
+}
+
+.instructions-wrapper {
+	border-style:solid;
+	border-color: black;
+	size: 250px;
+}
+
+.instructions-wrapper, img {
+	display: inline-block;
+	size: 150px;
+
+}
+
+section.about-me {
+	color: #gggggg;
+	background-color: blue;
+}
+
+.about-me img {
+
+	width: 300px;
+	float: left;
+}
+
+.form-wrapper{
+
+	background-color: green;
+	color: greenyellow;
+	padding: 15px;
+	border: 5rem, grey;
+	align-content: center;
+
+}
+
+table, th, td {
+	border: 1px solid black;
+	color: greenyellow;
+	background-color: black;
+}
