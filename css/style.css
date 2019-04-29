@@ -62,70 +62,150 @@ body { width: 100%;}
 * * Attribute Selectors
 ******************************************************/
 
+
+/**
+Global style rules
+ */
+
 body {
-	font-family: Beirut, "serif";
+	font-family: monospace, "Courier New";
 }
+
+section {
+	padding: 2.75rem;
+}
+
+/**
+Header
+ */
 
 header {
-	color: greenyellow;
-	background-color: #373a37;
-	font-size: 1.35rem;
+	background-color: #333;
+	color: lime;
 }
 
-h1 {
-	text-decoration-color: greenyellow;
+header h1 {
 	display: inline-block;
 	margin-right: 2rem;
+	font-size: 2.5rem;
+}
 
+/**
+Welcome section
+ */
+
+img[alt="welcome to my homepage"] {
+	display: block;
+	margin: 0 auto 2rem;
 }
 
 .instructions-wrapper {
-	border-style:solid;
-	border-color: black;
-	size: 250px;
+	display: flex;
+	align-items: flex-start;
+	border: 3px solid black;
+	padding: 20px;
 }
 
-.instructions-wrapper, img {
-	display: inline-block;
-	size: 150px;
-
+.instructions-wrapper img {
+	width: 256px;
 }
+
+.instructions-content {
+	flex: 1;
+	padding-right: 2rem;
+}
+
+.instructions-content h2 {
+	margin-top: 0;
+}
+
+/**
+about me section
+ */
 
 section.about-me {
-	color: #gggggg;
 	background-color: blue;
-}
-
-.container2{
-	display: flex;
-	margin: 10%;
-	padding: 2%;
-	justify-content: space-between;
+	color: #fff;
 }
 
 .about-me img {
-
-	flex-basis: 35%;
-	align-self: center;
+	width: 300px;
+	float: left;
+	margin-right: 2rem;
+	border: solid white;
 }
 
-.about-me-content {
-	flex-basis: 55%;
-	justify-self: flex-end;
+.about-me span {
+	color: yellow;
+	font-style: italic;
 }
 
-.form-wrapper{
+/**
+Skillz
+ */
 
-	background-color: green;
-	color: greenyellow;
-	padding: 15px;
-	border: 5rem, grey;
-	align-content: center;
-
+section:nth-child(4) h2 {
+	text-align: right;
+	margin-top: 0;
 }
 
-table, th, td {
-	border: 1px solid black;
-	color: greenyellow;
+section:nth-child(4) table {
+	width: 100%;
+	color: lime;
+}
+
+section:nth-child(4) table td,
+section:nth-child(4) table th {
+	background-color: #333;
+	padding: 10px;
+	text-align: left;
+}
+
+/**
+contact form
+ */
+
+div.sfooter-content section:last-child{
+	background-color: #333;
+}
+
+.form-wrapper {
+	background-color: darkgreen;
+	color: lime;
+	padding: 20px;
+}
+
+label {
+	display: block;
+	margin: 15px 0 5px 0;
+}
+
+input, textarea {
+	width: 30%;
+	padding: 8px;
+}
+
+button {
+	background-color: lime;
+	font-weight: bold;
+	border: none;
+	padding: 10px 31px;
+	font-size: 1rem;
+}
+
+form div:nth-child(4) {
+	margin-bottom: 15px;
+}
+
+.form-wrapper h2 {
+	margin-top: 0;
+}
+
+/**
+footer
+ */
+
+footer {
 	background-color: black;
+	color: white;
 }
