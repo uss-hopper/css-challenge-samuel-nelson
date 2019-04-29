@@ -79,13 +79,6 @@ h1 {
 
 }
 
-img {
-	display: block;
-	margin: 0 auto 2rem;
-	width: 300px;
-	align-content: center;
-}
-
 .instructions-wrapper {
 	border-style:solid;
 	border-color: black;
@@ -103,10 +96,22 @@ section.about-me {
 	background-color: blue;
 }
 
+.container2{
+	display: flex;
+	margin: 10%;
+	padding: 2%;
+	justify-content: space-between;
+}
+
 .about-me img {
 
-	width: 300px;
-	float: left;
+	flex-basis: 35%;
+	align-self: center;
+}
+
+.about-me-content {
+	flex-basis: 55%;
+	justify-self: flex-end;
 }
 
 .form-wrapper{
